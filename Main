@@ -1,0 +1,17 @@
+// Go to chrome://dino/
+
+// Paste this inside the inspect element console of Chrome browser
+
+// To Remove all the obstacles
+var dummy = Runner.prototype.gameOver
+Runner.prototype.gameOver = function(){
+}
+
+// To set the Dino speed
+Runner.instance_.setSpeed(6000)
+
+// To set the Dino jump limit
+Runner.instance_.tRex.setJumpVelocity(10)
+
+// To stop the hack
+Runner.prototype.gameOver = dummy
